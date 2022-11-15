@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords"
+            content="width=device-width, initial-scale=1.0, html , Nabowy,  css , JavaScript , bootStarp , ios Portfolio , website , page , animation-page , full-control-website,amazing-Portfolio">
+        <meta name="description"
+            content="Free Web tutorials for HTML and CSS JavaScript , Nabowy , BootStarp , React , Portoflio , THREE.JS , صفحتي الشخصيه,  website 3d">
+        <meta name="author" content="ProNabowy">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Select Normalize Fill -->
+        <link rel="stylesheet" href="css/noramliz.css">
+        <!-- Select BootStarp File -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Select FontAwsome File -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Swiper Css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+        <!-- Animation Libraries -->
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100;700;900&display=swap"
+            rel="stylesheet">
+        <!-- AOS Animation Libraries  -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Select Main CSS Fill -->
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- Page Icone -->
+        <link rel="icon"
+            href="https://www.fekera.com/wp-content/uploads/2020/11/IMG_%D9%A2%D9%A0%D9%A2%D9%A0%D9%A1%D9%A1%D9%A1%D9%A0_%D9%A1%D9%A9%D9%A1%D9%A3%D9%A3%D9%A1.jpg"
+            type="image/x-icon">
+        <title>Nabowy</title>
+    </head>
+
+    <body style="overflow: hidden !important;">
+        <!-- Create Loader -->
+        <div class="loader-page position-absolute bg-black d-flex flex-column justify-content-center align-items-center"
+            style="min-height: 100vh; width: 100vw; left: 0; top: 0; z-index: 1111110;">
+            <div class="text-center">
+                <p class="d-inline-block text-uppercase text-center"
+                    style="font-size: 4em; animation: var(--effect); font-weight: 600; transform: scale(.5); color: #121212; -webkit-text-stroke: 2px gray;">
+                    l</p>
+                <p class="d-inline-block text-uppercase text-center"
+                    style="font-size: 4em; animation: var(--effect) .125s; font-weight: 600; transform: scale(.5); color: #121212; -webkit-text-stroke: 2px gray;">
+                    o</p>
+                <p class="d-inline-block text-uppercase text-center"
+                    style="font-size: 4em; animation: var(--effect) .25s; font-weight: 600; transform: scale(.5); color: #121212; -webkit-text-stroke: 2px gray;">
+                    a</p>
+                <p class="d-inline-block text-uppercase text-center"
+                    style="font-size: 4em; animation: var(--effect) .375s; font-weight: 600; transform: scale(.5); color: #121212; -webkit-text-stroke: 2px gray;">
+                    d</p>
+                <p class="d-inline-block text-uppercase text-center"
+                    style="font-size: 4em; animation: var(--effect) .5s; font-weight: 600; transform: scale(.5); color: #121212; -webkit-text-stroke: 2px gray;">
+                    i</p>
+                <p class="d-inline-block text-uppercase text-center"
+                    style="font-size: 4em; animation: var(--effect) .675s; font-weight: 600; transform: scale(.5); color: #121212; -webkit-text-stroke: 2px gray;">
+                    n</p>
+                <p class="d-inline-block text-uppercase text-center"
+                    style="font-size: 4em; animation: var(--effect) .75s; font-weight: 600; transform: scale(.5); color: #121212; -webkit-text-stroke: 2px gray;">
+                    g</p>
+            </div>
+            <div class="loader text-center" style="animation: rotate 1s infinite; height: 50px; width: 50px;"></div>
+        </div>
+        <!-- End Create Loader -->
+        <!-- Start Header -->
+        <header class="user-select-none pt-5 pb-5 overflow-hidden" style="transition: var(--main-transition);">
+            <div class="container">
+                <div class="wrapper d-flex justify-content-between align-items-center">
+                    <div class="fw-bolder text-white logo" style="letter-spacing: 5px; z-index: 11;">Nabowy</div>
+                    <ul class="list p-0 d-flex mb-0 justify-content-between align-items-center"
+                        style="transition: var(--main-transition);">
+                        <li><a href="#landing"
+                                class="d-block tracking-in-contract-bck pt-3 pb-3 position-relative overflow-hidden active">HOME</a>
+                        </li>
+                        <li><a href="#about"
+                                class="d-block tracking-in-contract-bck pt-3 pb-3 position-relative overflow-hidden">ABOUT</a>
+                        </li>
+                        <li><a href="#work"
+                                class="d-block tracking-in-contract-bck pt-3 pb-3 position-relative overflow-hidden">WORK</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="d-block tracking-in-contract-bck pt-3 pb-3 position-relative overflow-hidden">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icones">
+                    <i class="fa-solid fa-bars hidden"></i>
+                    <i class="fa-solid fa-x hidden"></i>
+                </div>
+            </div>
+
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Landing Page -->
+        <div id="landing" class="ps-abs"></div>
+        <section class="landing_page"></section>
+        <!-- End Landing Page -->
+        <!-- Create Section About Page -->
+        <section class="about pt-4 pb-4 position-relative" style=" z-index: 0 !important;" id="about">
+            <div id="mouse_effect" class="ps-abs position-fixed" style="z-index: 1;">
+            </div>
+            <div class="container p-lg-4 bg-gradient position-static" style="z-index: 10;">
+                <div class="row p-3" style="background:#1c1f27; position: relative; z-index: 100;">
+                    <nav class="col-lg-3" style="background-color: #1f2029;">
+                        <div class="position-relative ps-2 pe-2"
+                            style="z-index: 100; height: 200px; width: 100%; margin-bottom: 20px;">
+                            <div class=" d-flex justify-content-center align-items-center flex-column"
+                                style="background-color: #22252f; width: 100%; height: 100%;">
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/nabowy.PNG"
+                                    style="max-width: 100%;" alt="my-photo" width="200px" height="180px">
+                                <p class="text-white mt-3">Front-End
+                                    Developer</p>
+                            </div>
+                        </div>
+                        <div class="ps-3 pe-3">
+                            <h1 style=" font-size: 20px; " class=" text-white fw-bold
+                            text-center">Skills & Knowloedge</h1>
+                            <div class="d-lg-block d-flex justify-content-center align-items-center flex-wrap mb-3"
+                                style="border-bottom: 3px solid #22252f;">
+                                <p class="text-white-50 pe-3 " style="font-size: 12px; font-weight: bold;"><i
+                                        class="fa-solid fa-check"
+                                        style="color:yellow; margin-right: 10px; font-size: 11px; font-weight: bold;"></i>
+                                    JavaScript</p>
+                                <p class="text-white-50 pe-3" style="font-size: 12px; font-weight: bold;"><i
+                                        class="fa-solid fa-check"
+                                        style="color:yellow; margin-right: 10px; font-size: 11px;"></i> React</p>
+                                <p class="text-white-50 pe-3" style="font-size: 12px; font-weight: bold;"><i
+                                        class="fa-solid fa-check"
+                                        style="color:yellow; margin-right: 10px; font-size: 11px;"></i> Problem Solving
+                                </p>
+                                <p class="text-white-50 pe-3" style="font-size: 12px; font-weight: bold;"><i
+                                        class="fa-solid fa-check"
+                                        style="color:yellow; margin-right: 10px; font-size: 11px;"></i> THREE.JS</p>
+                                <p class="text-white-50 pe-3" style="font-size: 12px; font-weight: bold;"><i
+                                        class="fa-solid fa-check"
+                                        style="color:yellow; margin-right: 10px; font-size: 11px;"></i> BootStrap</p>
+                                <p class="text-white-50 pe-3" style="font-size: 12px; font-weight: bold;"><i
+                                        class="fa-solid fa-check"
+                                        style="color:yellow; margin-right: 10px; font-size: 11px;"></i> Canvas</p>
+                                <p class="text-white-50 pe-3" style="font-size: 12px; font-weight: bold;"><i
+                                        class="fa-solid fa-check"
+                                        style="color:yellow; margin-right: 10px; font-size: 11px;"></i> CSS</p>
+                                <p class="text-white-50" style="font-size: 12px; font-weight: bold;"><i
+                                        class="fa-solid fa-check "
+                                        style="color:yellow;     margin-right: 10px; font-size: 11px;"></i>
+                                    HTML</p>
+                            </div>
+                        </div>
+                        <div class="cv mb-3"><a
+                                href="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/CV_2.jpg"
+                                class="text-white-50 d-block text-center" target="_blank"
+                                download=" https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/CV_2.jpg"
+                                style="font-size: 12px; font-weight: bold;">DOWNLOED
+                                CV <i class="fa-solid fa-download"></i></a></div>
+                        <div class="social d-flex justify-content-center align-items-center p-3">
+                            <a href="https://www.facebook.com/elngmadle" class="text-white-50" class="text-white-50"
+                                class="text-white-50" class="text-white-50"> <i
+                                    style="margin-left: 20px; display: block;" class="fa-brands fa-facebook-f"></i></a>
+
+                            <a href="https://twitter.com/M_Nabowy" class="text-white-50"><i
+                                    style="margin-left: 20px; display: block;" class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/mahmoud-e-nabowy-408913250/" class="text-white-50"
+                                class="text-white-50"><i style="margin-left: 20px; display: block;"
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/ProNabowy" class="text-white-50"><i
+                                    style="margin-left: 20px; display: block;" class="fa-brands fa-github"></i></a>
+                        </div>
+                    </nav>
+                    <div class="about col-lg-9 d-flex justify-content-center align-items-center flex-column"
+                        style="background-color: #2c2d35;">
+                        <h1 class="text-center fw-bolder m-3 text-white leRotateXZoomIn user-select-none">About Me </h1>
+                        <p class="text-white-50 w-75 text-center fs-6 fw-bold" style="margin: 15px auto;">
+                            Hello, I'm Front-End Deveolper, I Can Build any Professional Website With High Quality, Best
+                            Performance,
+                            Better Search Engine Optimization, Any Responisve Website
+                        </p>
+                        <p class="text-white-50 w-75 text-center fs-6 fw-bold" style="margin: 15px auto;">I've A good
+                            Experience
+                            About How To Build
+                            Professional
+                            Animation Website,
+                            The whole project was started as an idea of using a web demo to explain what procedural
+                            noise is to our clients at me
+                            website. After sending out the demo to some of our friends </p>
+                        <p class="text-white-50 w-75 text-center fs-6 fw-bold text-capitalize"
+                            style="margin: 15px auto;">this
+                            website is an
+                            multidisciplinary
+                            production studio. From creative to production, we
+                            collaborate with creative
+                            Freinds and design studios to deliver compelling, real-time experiences, which go far beyond
+                            expectations,
+                            I will set all my projects here to let you see all of those
+                        </p>
+                        <p class="text-white-50 w-75 text-center fs-6 fw-bold text-capitalize"
+                            style="margin: 15px auto;">
+                            i can Fixing a broken sitemap file and adding schema markup to a landing Page
+                            working with the editorial team to make thier content better for SEO,
+                            building an SEO QA process for dev team
+                            <br>
+                            Benchmarking the user experience of our landing pages vs competitors to create continual
+                            improvement
+                            <br>
+                            Pitching for new editorial resources dedicated to SEO goals
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Create Section About Page -->
+
+        <section style="min-height: 100vh; overflow: hidden;" id="work" class="pt-5 pb-5">
+            <div class="container position-relative" style="z-index:10 ;">
+                <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                    style="font-size: 50px; width: 100% !important; font-weight: bold; text-align: center;">Works
+                    Gallary</h1>
+
+                <div class="wrapper-gallary">
+                    <div class="item position-relative" style="width: 90%; margin-bottom: 150px;" data-aos="zoom-in">
+                        <a href="https://pronabowy.github.io/Dashboard/" class="text-white" target="_blank">
+                            <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/dashboard.jpg"
+                                alt="img logo" width="1200px" height="100%"
+                                style="max-width: 100%; width: 100%; height:100%;">
+
+                            <div class="caption  p-5 position-absolute"
+                                style="background-color: #111; -webkit-box-shadow: 0 0 20px 0px #444; right: -100px; bottom: -100px;">
+                                <h3 class="mb-5" style="font-weight: bold;">Full Responisve Dashboard</h3>
+                                <p style="font-weight:bold; text-transform: capitalize;">Responisve Dashboard with
+                                    dynamic Pages and APIS </p>
+                                <i class="fa-solid fa-arrow-right position-absolute"
+                                    style="right: 30px; font-size:30px; "></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item position-relative" style="width: 90%; margin-bottom: 150px;" data-aos="zoom-in">
+                        <a href="https://pronabowy.github.io/E-Sports/" class="text-white" target="_blank">
+                            <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/e-sports.jpg"
+                                width="1200px" height="100%" alt="Amazing React App"
+                                style="max-width: 100%; max-height: 500px;">
+                            <div class="caption  p-5 position-absolute"
+                                style="background-color: #111; -webkit-box-shadow: 0 0 20px 0px #444; right: -100px; bottom: -100px;">
+                                <h3 class="mb-5" style="font-weight: bold;">Full Responisve E-Sprts Website</h3>
+                                <p style="font-weight:bold; text-transform: capitalize;">An Ar Experience for your
+                                    beloved games brands and Football News</p>
+                                <i class="fa-solid fa-arrow-right position-absolute"
+                                    style="right: 30px; font-size:30px; "></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item position-relative" style="width: 90%; margin-bottom: 150px;" data-aos="zoom-in">
+                        <a href="https://react-app-d38da.web.app/" class="text-white" target="_blank">
+                            <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/react-app.jpg"
+                                width="1200px" height="100%" alt="Amazing React App" style="max-width: 100%;">
+                            <div class="caption  p-5 position-absolute"
+                                style="background-color: #111; -webkit-box-shadow: 0 0 20px 0px #444; right: -100px; bottom: -100px;">
+                                <h3 class="mb-5" style="font-weight: bold;">Full Responisve React APP</h3>
+                                <p style="font-weight:bold; text-transform: capitalize;">An Ar Experience for your
+                                    beloved games brands</p>
+                                <i class="fa-solid fa-arrow-right position-absolute"
+                                    style="right: 30px; font-size:30px; "></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item position-relative" style="width: 90%; margin-bottom: 150px;"
+                        data-aos="zoom-in-down">
+                        <a href="https://pronabowy.github.io/Template_Four/" class="text-white" target="_blank">
+                            <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/test-repeat.jpg"
+                                width="1200px" height="100%" alt="Speed Test" style="max-width: 100%;">
+                            <div class="caption  p-5 position-absolute"
+                                style="background-color: #111; -webkit-box-shadow: 0 0 20px 0px #444; right: -100px; bottom: -100px;">
+                                <h3 class="mb-5" style="font-weight: bold;">WebPageTest
+                                </h3>
+                                <p style="font-weight:bold; text-transform: capitalize;">Test. Optimize. Repeat.
+                                    Get 25% off on WPT API to Automate and Optimize your WebPerf</p>
+                                <i class="fa-solid fa-arrow-right position-absolute"
+                                    style="right: 30px; font-size:30px; "></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item position-relative" style="width: 90%; margin-bottom: 150px;"
+                        data-aos="zoom-in-left">
+                        <a href="https://pronabowy.github.io/Quiz-Website/" class="text-white" target="_blank">
+                            <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/Quiz.jpg"
+                                width="1200px" height="100%" alt="Amazing Quiz App" style="max-width: 100%;">
+                            <div class="caption  p-5 position-absolute"
+                                style="background-color: #111; -webkit-box-shadow: 0 0 20px 0px #444; right: -100px; bottom: -100px;">
+                                <h3 class="mb-5" style="font-weight: bold;">Full Responisve JavaScript APP</h3>
+                                <p style="font-weight:bold; text-transform: capitalize;">Full Reference Js && Css &&
+                                    HTML APP and Quiz Applaction using Canvas on it</p>
+                                <i class="fa-solid fa-arrow-right position-absolute"
+                                    style="right: 30px; font-size:30px; "></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item position-relative" style="width: 90%; margin-bottom: 150px;"
+                        data-aos="zoom-in-right">
+                        <a href="https://pronabowy.github.io/Bondi/" class="text-white" target="_blank">
+                            <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/Bondi.jpg"
+                                width="1200px" height="100%" style="max-width: 100%;" alt="Bondi img">
+
+                            <div class="caption  p-5 position-absolute"
+                                style="background-color: #111; -webkit-box-shadow: 0 0 20px 0px #444; right: -100px; bottom: -100px;">
+                                <h3 class="mb-5" style="font-weight: bold;">Full Responisve WebSite Using HTML And CSS
+                                </h3>
+                                <p style="font-weight:bold; text-transform: capitalize;">a High-Fidelity, immersive,
+                                    Website Experience</p>
+                                <i class="fa-solid fa-arrow-right position-absolute"
+                                    style="right: 30px; font-size:30px; "></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item position-relative" style="width: 90%; margin-bottom: 150px;"
+                        data-aos="zoom-out-up">
+                        <a href="https://pronabowy.github.io/Template_nine/" class="text-white" target="_blank">
+                            <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/exitlag.jpg"
+                                width="1200px" height="100%" alt="Professional Website" style="max-width: 100%;">
+                            <div class="caption  p-5 position-absolute"
+                                style="background-color: #111; -webkit-box-shadow: 0 0 20px 0px #444; right: -100px; bottom: -100px;">
+                                <h3 class="mb-5" style="font-weight: bold;">Full Responisve Website</h3>
+                                <p style="font-weight:bold; text-transform: capitalize;">an immersive web page
+                                    experience</p>
+                                <i class="fa-solid fa-arrow-right position-absolute"
+                                    style="right: 30px; font-size:30px; "></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item position-relative" style="width: 90%; margin-bottom: 150px;"
+                        data-aos="zoom-out-right">
+                        <a href="https://pronabowy.github.io/Premier_League/" class="text-white" target="_blank">
+                            <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/primier.jpg"
+                                width="1200px" height="100%" alt="Professional Permieer Clone" style="max-width: 100%;">
+                            <div class="caption  p-5 position-absolute"
+                                style="background-color: #111; -webkit-box-shadow: 0 0 20px 0px #444; right: -100px; bottom: -100px;">
+                                <h3 class="mb-5" style="font-weight: bold;">Full Responisve Permieer League Clone</h3>
+                                <p style="font-weight:bold; text-transform: capitalize;">An Ar Experience for your
+                                    beloved games brands</p>
+                                <i class="fa-solid fa-arrow-right position-absolute"
+                                    style="right: 30px; font-size:30px; "></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item position-relative" style="width: 90%; margin-bottom: 150px;"
+                        data-aos="zoom-out-left">
+                        <a href="https://pronabowy.github.io/Special-Design/" class="text-white" target="_blank">
+                            <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/special.jpg"
+                                width="1200px" height="100%" alt="Special-Design Clone" style="max-width: 100%;">
+                            <div class="caption  p-5 position-absolute"
+                                style="background-color: #111; -webkit-box-shadow: 0 0 20px 0px #444; right: -100px; bottom: -100px;">
+                                <h3 class="mb-5" style="font-weight: bold;">Full Responisve Special-Design Clone</h3>
+                                <p style="font-weight:bold; text-transform: capitalize;">An Ar Experience Web Page</p>
+                                <i class="fa-solid fa-arrow-right position-absolute"
+                                    style="right: 30px; font-size:30px; "></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <h1 class="d-block text-pop-up-top  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                    style="font-size: 30px; width: 100% !important; font-weight: bold; text-align: center;">Works
+                    Tutorials</h1>
+                <h1 class="d-block tracking-in-contract-bck user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                    style="font-size: 30px; width: 100% !important; color: var(--color); font-weight: bold; text-align: center;">
+                    JavaScript
+                    Tutorials</h1>
+                <!-- Swiper JavaScript Tutorial -->
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                    class="swiper js-animait mySwiper" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                    data-aos-offset="500" data-aos-duration="3000">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 40px; width: 100% !important; font-weight: bold; text-align: center;">
+                                YouTube API</h1>
+                            <a href="https://pronabowy.github.io/Youtube-APIs/" target="_blank">
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/Youtube_API.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="Youtbe API Tutorial">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 40px; width: 100% !important; font-weight: bold; text-align: center;">
+                                Typing Speed-Game</h1>
+                            <a href="https://pronabowy.github.io/Typing-Speed-Game/" target="_blank">
+
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/typing.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="Typing Speed-Gam">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 30px; width: 100% !important; font-weight: bold; text-align: center;">
+                                Schedule LocalStorage </h1>
+                            <a href="https://pronabowy.github.io/Schedule-LocalStorage-App/" target="_blank">
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/schedule.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="Schedule LocalStorage">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 40px; width: 100% !important; font-weight: bold; text-align: center;">
+                                Slider-Images</h1>
+                            <a href="https://pronabowy.github.io/Slider-Images/" target="_blank">
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/slider.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="Slider-Images">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 40px; width: 100% !important; font-weight: bold; text-align: center;">
+                                LocalStorage Tutorial</h1>
+                            <a href="https://pronabowy.github.io/LocalStorage/" target="_blank">
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/localStorage.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="LocalStorage Image">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 40px; width: 100% !important; font-weight: bold; text-align: center;">
+                                Filteration Tutorial</h1>
+                            <a href="https://pronabowy.github.io/Filteration/" target="_blank">
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/filter.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="Filteration Tutorial Image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <h1 class="d-block leFlyInRight  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                    style="font-size: 30px; width: 100% !important; color: var(--color); font-weight: bold; text-align: center;">
+                    APIs Tutorials</h1>
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper"
+                    data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 40px; width: 100% !important; font-weight: bold; text-align: center;">
+                                Random Images API</h1>
+                            <a href="https://pronabowy.github.io/API-Random-image/" target="_blank">
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/random-img.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="Random Images API">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 30px; width: 100% !important; font-weight: bold; text-align: center;">
+                                Githube API </h1>
+                            <a href="https://pronabowy.github.io/github_Api/" target="_blank">
+
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/github.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="Githube API">
+
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 40px; width: 100% !important; font-weight: bold; text-align: center;">
+                                YouTube API</h1>
+                            <a href="https://pronabowy.github.io/Youtube-APIs/" target="_blank">
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/Youtube_API.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="YouTube API image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <h1 class="d-block leHangAndDropLeft  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                    style="font-size: 30px; width: 100% !important; color: var(--color); font-weight: bold; text-align: center;">
+                    Canvas Tutorials</h1>
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper"
+                    data-aos="flip-up">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 40px; width: 100% !important; font-weight: bold; text-align: center;">
+                                Canvas</h1>
+                            <a href="https://pronabowy.github.io/CanvasOne/" target="_blank">
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/canvas-one.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="Youtbe API Tutorial">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 30px; width: 100% !important; font-weight: bold; text-align: center;">
+                                Canvas Tutorial </h1>
+                            <a href="https://pronabowy.github.io/CanvasTwo/" target="_blank">
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/canvas-two.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="Canvas Darwing">
+
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 40px; width: 100% !important; font-weight: bold; text-align: center;">
+                                Canvas Tutorial</h1>
+                            <a href="https://pronabowy.github.io/CanvasThree/" target="_blank">
+
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/canvas-three.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="Canvas Darwing">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 40px; width: 100% !important; font-weight: bold; text-align: center;">
+                                Canvas Tutorial</h1>
+                            <a href="https://pronabowy.github.io/CanvasFour/" target="_blank">
+
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/canvas-four.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="Canvas Darwing">
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <h1 class="d-block leRotateXZoomIn  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                    style="font-size: 30px; width: 100% !important; color: var(--color); font-weight: bold; text-align: center;">
+                    CSS Tutorials</h1>
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper"
+                    data-aos="zoom-out-right">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 40px; width: 100% !important; font-weight: bold; text-align: center;">
+                                CSS Challenge</h1>
+                            <a href="https://pronabowy.github.io/clipboard-landing-page-master/" target="_blank">
+
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/landing-page.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="Landing_Page">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 30px; width: 100% !important; font-weight: bold; text-align: center;">
+                                Css Challenge</h1>
+                            <a href="https://pronabowy.github.io/alternating-feature-blocks-master/" target="_blank">
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/Huddel.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="Huddle-landing-page">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 40px; width: 100% !important; font-weight: bold; text-align: center;">
+                                Css Challenge</h1>
+                            <a href="https://pronabowy.github.io/Testimonials-grid-section-main/" target="_blank">
+
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/gird.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="gird-system">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 40px; width: 100% !important; font-weight: bold; text-align: center;">
+                                Css Circle Tutorial</h1>
+                            <a href="https://pronabowy.github.io/Circles/" target="_blank">
+
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/circles.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="Circles animation images">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 40px; width: 100% !important; font-weight: bold; text-align: center;">
+                                Css Apple Logo Tutorial</h1>
+                            <a href="https://pronabowy.github.io/Aplle/" target="_blank">
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/apple.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="Aplle-Logo">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 40px; width: 100% !important; font-weight: bold; text-align: center;">
+                                Css Cards Tutorial</h1>
+                            <a href="https://pronabowy.github.io/Cards/" target="_blank">
+
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/cards.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="Cards Images">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 40px; width: 100% !important; font-weight: bold; text-align: center;">
+                                Css check-box Tutorial</h1>
+                            <a href="https://pronabowy.github.io/toggle_CheckBox/" target="_blank">
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/check_box.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="check-box images">
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <h1 class="d-block rotate  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                    style="font-size: 30px; width: 100% !important; color: var(--color); font-weight: bold; text-align: center;">
+                    Darwing By Css</h1>
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper"
+                    data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 40px; width: 100% !important; font-weight: bold; text-align: center;">
+                                Computer Shape</h1>
+                            <a href="https://pronabowy.github.io/Compute-Darw/" target="_blank">
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/computer.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="Computer Shaper">
+
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="d-block tracking-in-contract-bck  user-select-none pt-4 pb-4 position-relative overflow-hidden"
+                                style="font-size: 30px; width: 100% !important; font-weight: bold; text-align: center;">
+                                Css Shape </h1>
+                            <a href="https://pronabowy.github.io/shape-Darw/" target="_blank">
+
+                                <img src="https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/shape.jpg"
+                                    width="400px" height="100%"
+                                    style="user-select: none; height: 300px; width: 100%; max-width: 100%;"
+                                    alt="Shpae Darwing">
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start Footer  -->
+        <footer style="min-height: 100vh;"
+            class="d-flex align-items-center position-relative overflow-hidden bg-black text-white">
+            <div id="footer-Model" style="position: absolute; z-index: 0; left: 0; top: 0;"></div>
+            <div class="container position-relative" style="z-index: 100; margin-top:100px;">
+                <h1 style="font-weight: bolder; font-size: 55px; margin-bottom: 20px;">Follow Me Here.</h1>
+                <p class="text-capitalize text-white-50 mb-4">let's make something incredible together!</p>
+                <div class="row d-flex justify-content-between align-content-center" style="width: 50%;">
+                    <ul class="col-lg-4 col-6 position-relative overflow-hidden">
+                        <li>
+                            <h6 class="text-uppercase fw-bold user-select-none ms-2">contact</h6>
+                        </li>
+                        <li><a href="https://mail.google.com/mail/u/0/?hl=en&tf=cm&fs=1&to=elngmadle@gmail.com"
+                                class="text-white mb-3 ms-2 user-select-none"
+                                style="font-size: 13px; font-weight: bold;">nabowy@gmail.com</a></li>
+                        <li><a href="http://www.nabowy.online" class="text-white mb-3 ms-2 user-select-none"
+                                style="font-size: 13px; font-weight: bold;">www.nabowy.online</a></li>
+                        <li><a href="https://twitter.com/M_Nabowy" class="text-white mb-3 ms-2 user-select-none"
+                                style="font-size: 13px; font-weight: bold;">nabowy@twitter.com</a></li>
+                    </ul>
+                    <ul class="col-lg-4 col-6 position-relative overflow-hidden">
+                        <li>
+                            <h6 class="text-uppercase fw-bold user-select-nonems-2">VISIT</h6>
+                        </li>
+                        <li><a href="https://react-app-d38da.web.app/" class="text-white mb-3 ms-2 user-select-none"
+                                style="font-size: 13px; font-weight: bold;">React App</a></li>
+                        <li><a href="https://pronabowy.github.io/Template_Four/"
+                                class="text-white mb-3 ms-2 user-select-none"
+                                style="font-size: 13px; font-weight: bold;">Optimize Repeat</a></li>
+                        <li><a href="https://pronabowy.github.io/Quiz-Website/"
+                                class="text-white mb-3 ms-2 user-select-none"
+                                style="font-size: 13px; font-weight: bold;">Quiz App</a></li>
+                    </ul>
+                    <ul class="col-lg-4 col-6 position-relative overflow-hidden">
+                        <li>
+                            <h6 class="text-uppercase fw-bold user-select-nonems-2">social</h6>
+                        </li>
+                        <li><a href="https://www.facebook.com/elngmadle" class="text-white mb-3 ms-2 user-select-none"
+                                style="font-size: 13px; font-weight: bold;">FaceBook</a></li>
+                        <li><a href="https://twitter.com/M_Nabowy" class="text-white mb-3 ms-2 user-select-none"
+                                style="font-size: 13px; font-weight: bold;">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/nabowy_here/"
+                                class="text-white mb-3 ms-2 user-select-none"
+                                style="font-size: 13px; font-weight: bold;">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="position-absolute"
+                style="left:15%; bottom:20px; z-index: 100; font-size: 13px; word-spacing: 3px;">
+                &copy;2020-2022 Nabowy Ltd. All Rights Reserved Designed And Developed By Nabowy</p>
+        </footer>
+        <!-- End Footer  -->
+
+        <!-- 
+                =========================================== Set All Java Script Filles =======================================
+        -->
+
+        <!-- 
+                =========================================== Three.js Files =======================================
+         -->
+
+        <!-- Set THREE.JS Files -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js" async></script>
+        <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js" async></script>
+        <script src="https://unpkg.com/three@0.77.0/examples/js/controls/OrbitControls.js" async></script>
+        <script src="https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/js/loaders/FontLoader.js"
+            async></script>
+        <script src="https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/js/geometries/TextGeometry.js"
+            async></script>
+        <script src="https://baronwatts.com/scripts/LegacyJSONLoader.js" async></script>
+        <script src="https://unpkg.com/three@0.77.0/examples/js/effects/StereoEffect.js" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.2/TweenMax.min.js" async></script>
+        <!-- End THREE.JS Files -->
+
+        <!-- 
+                =========================================== End Three.js Files =======================================
+        -->
+
+        <!-- 
+                =========================================== BootStrap Fill =======================================
+        -->
+        <!-- bootStarp Fill -->
+        <script src="js/bootstrap.bundle.min.js" async></script>
+        <!-- 
+                =========================================== End BootStrap Fill =======================================
+        -->
+
+        <!-- 
+                =========================================== Swiper Js Library =======================================
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" async></script>
+        <!-- 
+                =========================================== End Swiper Js Library =======================================
+        -->
+
+        <!-- 
+                =========================================== aos Library =======================================
+        -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({ duration: 2000 });
+        </script>
+        <script src="js/animation.js" async></script>
+        <!-- 
+                =========================================== End aos Library =======================================
+        -->
+        <!-- 
+                =========================================== Main Js File =======================================
+        -->
+        <script src="js/basic.js" async></script>
+        <!-- 
+                =========================================== End Main Js File =======================================
+        -->
+
+        <!-- 
+                ===========================================  Header Js File =======================================
+        -->
+        <script src="js/header_Logic.js" async></script>
+        <!-- 
+                =========================================== End Header Js File =======================================
+        -->
+
+        <!-- 
+                ===========================================  Landing Js File =======================================
+        -->
+        <script src="Landing_Effect/landing.js" async></script>
+        <!-- 
+                =========================================== End Landing Js File =======================================
+        -->
+        <!-- 
+                =========================================== Set Mouse Effect File =======================================
+        -->
+        <script src="Mouse_Effect/mouse_Effect.js" async></script>
+        <!-- 
+                =========================================== End Set Mouse Effect File =======================================
+        -->
+        <!-- 
+                =========================================== End Set Footer Effect File =======================================
+        -->
+
+        <script src="./footer_File/footer_Logic.js" async></script>
+        <!-- 
+                =========================================== End Set Footer Effect File =======================================
+        -->
+    </body>
+
+</html>
