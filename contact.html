@@ -10,7 +10,7 @@
         <!-- Select BootStarp File -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- Select FontAwsome File -->
-        <link rel="stylesheet" href="css/all.min.css">
+        <script src="https://kit.fontawesome.com/844cf6868a.js" crossorigin="anonymous"></script>
         <!-- Swiper Css -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
         <!-- Google Fonts -->
@@ -30,9 +30,25 @@
 
         <!-- Page Icone -->
         <link rel="icon"
-            href="https://www.fekera.com/wp-content/uploads/2020/11/IMG_%D9%A2%D9%A0%D9%A2%D9%A0%D9%A1%D9%A1%D9%A1%D9%A0_%D9%A1%D9%A9%D9%A1%D9%A3%D9%A3%D9%A1.jpg"
+            href="./images/title.gif"
             type="image/x-icon">
         <title>Nabowy</title>
+<style>
+    .d-none {
+        display: none;
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    @media (min-width: 992px) {
+        .d-lg-flex {
+            display: flex;
+        }
+    }
+</style>
+
     </head>
 
     <body class="overflow-hidden">
@@ -66,7 +82,7 @@
         <section class="wrapper pos  d-flex justify-content-center align-items-center"
             style="height: calc(100vh - 165px);">
             <div class="layout text-white position-relative  d-lg-flex d-none justify-content-lg-center  flex-lg-column"
-                style="min-width: 440px; background-image: url(https://raw.githubusercontent.com/ProNabowy/Portfolio_img/main/form-bg.webp?token=GHSAT0AAAAAABYO42A4AV36F7TAXS5KKRJKY3R7Z5A);  z-index: -1 !important; background-size: cover; background-position: center; padding: 50px 30px; z-index: 11 !important;">
+                style="min-width: 440px; background-image: url(./images/contact-bg.webp);  z-index: 10 !important; background-size: cover; background-position: center; padding: 50px 30px;">
                 <h1 style="font-size: 40px;     font-weight: bold; line-height: 1.5; margin-bottom: 20px;">SAVE THE
                     <br>
                     DATE !
@@ -145,10 +161,8 @@
         <!-- SmtpJs To Conact Form With gmail -->
         <script src="https://smtpjs.com/v3/smtp.js">
         </script>
-        <!-- Header JS Fill -->
-        <script src="js/header_Logic.js"></script>
-        <!-- Form JS -->
-        <script src="js/form-design.js"></script>
+        <!-- Header JS Fill && Form JS -->
+        <script src="./dist/contact.js"></script>
     </body>
 
 </html>
