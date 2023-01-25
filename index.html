@@ -769,7 +769,7 @@
             </div>
             <p class="position-absolute"
                 style="left:15%; bottom:20px; z-index: 100; font-size: 13px; word-spacing: 3px;">
-                &copy;2020-2022 Nabowy Ltd. All Rights Reserved Designed And Developed By Nabowy</p>
+                &copy;2020-<span class="footer-year">2022</span> Nabowy Ltd. All Rights Reserved Designed And Developed By Nabowy</p>
         </footer>
         <!-- End Footer  -->
 
@@ -777,6 +777,9 @@
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
+            const footer_year = document.querySelector(".footer-year");
+            const get_full_year = new Date().getFullYear();
+            footer_year.innerHTML = get_full_year;
             AOS.init({ duration: 2000 });
         </script>
         <script src="render_files.js"></script>
