@@ -238,6 +238,9 @@ footer ul:nth-child(1) li a:hover::after {
 
 
 @media (max-width:991px) {
+    .contact-section {
+        height: calc(100vh - 80px) !important;
+    }
     footer .row {
         width: 100% !important;
     }
@@ -279,20 +282,28 @@ footer ul:nth-child(1) li a:hover::after {
 
 
 @media (max-width:767px) {
+    .contact-section {
+        height: calc(100vh - 75px) !important;
+    }
     .wrapper-form {
-        width: 340px !important;
+        width: 80% !important;
     }
 
-    .wrapper form {
-        width: 300px !important;
+    .wrapper-form form {
+        width: 100% !important;
     }
 
     .left-form {
         width: 35px !important;
     }
 
-    .wrapper form {
-        padding: 40px 15px !important;
+    .wrapper-form form {
+        padding: 15px !important;
+    }
+}
+@media (max-width: 550px) {
+    .wrapper-form {
+        width: 95% !important;
     }
 }
 
