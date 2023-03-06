@@ -42,7 +42,33 @@
                 position: relative;
             }
 
-            ;
+            .image-container {
+                width: 100%;
+                /* Set the width of the container to 100% */
+                height: 0;
+                /* Set the height to 0 to allow the padding to control the height */
+                padding-bottom: 50%;
+                /* Set the padding to match the natural aspect ratio of the image (e.g. 4:3 = 75%) */
+                position: relative;
+                /* Set the position to relative to allow absolute positioning of the image */
+            }
+
+            .swiper-item .image-container{
+                padding-bottom: 34% !important;
+            }
+
+            .image-container img {
+                position: absolute;
+                /* Set the position to absolute to position the image within the container */
+                top: 0;
+                left: 0;
+                width: 100%;
+                /* Set the width of the image to 100% to fill the container */
+                height: 100%;
+                /* Set the height of the image to 100% to fill the container */
+                object-fit: cover;
+                /* Set the object-fit property to cover to ensure the image fills the container without distortion */
+            }
         </style>
         <!-- Page Icone -->
         <link rel="icon" href="images/title.webp" type="image/x-icon">
@@ -102,8 +128,8 @@
         <!-- End Header -->
 
         <section class="landing_page position-relative center-flex overflow-hidden position-relative">
-            <img src="images/animaite-landing-img.webp" style="z-index: 3; animation: rotate 6s linear infinite;"
-                width="700px" height="700px" alt="animait-bg" id="animait-img">
+                <img src="images/animaite-landing-img.webp" style="z-index: 3; animation: rotate 6s linear infinite;" width="600px"
+                height="600px" alt="animait-bg" id="animait-img">
             <img src="images/nabowy.png" class="landing-photo" alt="landing-photo">
         </section>
         <!-- End Landing Page -->
@@ -239,86 +265,114 @@
                 <div class="work-gallery">
                     <div class="item" data-aos="zoom-in">
                         <a href="https://dashboard.nabowy.online/" class="text-white" target="_blank">
-                            <img src="images/dashboard.webp" alt="img logo" loading="lazy" width="650px" height="206px"
+                            <div class="image-container">
+                                <img src="images/dashboard.webp" alt="img logo" loading="lazy" width="650px" height="206px"
                                 style="max-width: 100%;">
+                            </div>
                         </a>
                     </div>
                     <div class="item" data-aos="zoom-in">
                         <a href="http://replit.nabowy.online/" class="text-white" target="_blank">
-                            <img src="./images/replit.webp" alt="img logo" loading="lazy" width="650px" height="206px"
-                                style="max-width: 100%;">
+                            <div class="image-container">
+                                <img src="./images/replit.webp" alt="img logo" loading="lazy" width="650px"
+                                    height="206px" style="max-width: 100%;">
+                            </div>
                         </a>
                     </div>
                     <div class="item" data-aos="zoom-in">
                         <a href="https://e-commerce.nabowy.online/" class="text-white" target="_blank">
-                            <img src="images/e-commerce.webp" alt="img logo" loading="lazy" width="650px" height="206px"
+                            <div class="image-container">
+                                <img src="images/e-commerce.webp" alt="img logo" loading="lazy" width="650px" height="206px"
                                 style="max-width: 100%;">
+                            </div>
                         </a>
                     </div>
                     <div class="item" data-aos="zoom-in">
                         <a href="https://quran.nabowy.online/" class="text-white" target="_blank">
-                            <img src="images/quran.webp" alt="img logo" loading="lazy" width="650px" height="206px"
+                            <div class="image-container">
+                                <img src="images/quran.webp" alt="img logo" loading="lazy" width="650px" height="206px"
                                 style="max-width: 100%;">
+                            </div>
                         </a>
                     </div>
                     <div class="item" data-aos="zoom-in">
                         <a href="https://music.nabowy.online/" class="text-white" target="_blank">
-                            <img src="images/music.webp" alt="img logo" loading="lazy" width="650px" height="206px"
+                            <div class="image-container">
+                                <img src="images/music.webp" alt="img logo" loading="lazy" width="650px" height="206px"
                                 style="max-width: 100%;">
+                            </div>
                         </a>
                     </div>
                     <div class="item" data-aos="zoom-in">
                         <a href="https://binary.nabowy.online/" class="text-white" target="_blank">
-                            <img src="images/binary.webp" alt="img logo" loading="lazy" width="650px" height="206px"
+                            <div class="image-container">
+                                <img src="images/binary.webp" alt="img logo" loading="lazy" width="650px" height="206px"
                                 style="max-width: 100%;">
+                            </div>
                         </a>
                     </div>
                     <div class="item" data-aos="zoom-in">
                         <a href="https://pronabowy.github.io/E-Sports/" class="text-white" target="_blank">
-                            <img src="images/e-sport.webp" alt="img logo" loading="lazy" width="650px" height="206px"
+                            <div class="image-container">
+                                <img src="images/e-sport.webp" alt="img logo" loading="lazy" width="650px" height="206px"
                                 style="max-width: 100%;">
+                            </div>
                         </a>
                     </div>
                     <div class="item" data-aos="zoom-in">
                         <a href="https://react-app-d38da.web.app/" class="text-white" target="_blank">
-                            <img src="images/react-app.webp" alt="img logo" loading="lazy" width="650px" height="206px"
+                            <div class="image-container">
+                                <img src="images/react-app.webp" alt="img logo" loading="lazy" width="650px" height="206px"
                                 style="max-width: 100%;">
+                            </div>
                         </a>
                     </div>
                     <div class="item" data-aos="zoom-in">
                         <a href="https://tech.nabowy.online/" class="text-white" target="_blank">
-                            <img src="images/tech-gide.webp" alt="img logo" loading="lazy" width="650px" height="206px"
+                            <div class="image-container">
+                                <img src="images/tech-gide.webp" alt="img logo" loading="lazy" width="650px" height="206px"
                                 style="max-width: 100%;">
+                            </div>
                         </a>
                     </div>
                     <div class="item" data-aos="zoom-in">
                         <a href="https://pronabowy.github.io/Template_Four/" class="text-white" target="_blank">
-                            <img src="images/test-rpeat.webp" alt="img logo" loading="lazy" width="650px" height="206px"
+                            <div class="image-container">
+                                <img src="images/test-rpeat.webp" alt="img logo" loading="lazy" width="650px" height="206px"
                                 style="max-width: 100%;">
+                            </div>
                         </a>
                     </div>
                     <div class="item" data-aos="zoom-in">
                         <a href="https://pronabowy.github.io/Bondi/" class="text-white" target="_blank">
-                            <img src="images/bondai.webp" alt="img logo" loading="lazy" width="650px" height="206px"
+                            <div class="image-container">
+                                <img src="images/bondai.webp" alt="img logo" loading="lazy" width="650px" height="206px"
                                 style="max-width: 100%;">
+                            </div>
                         </a>
                     </div>
                     <div class="item" data-aos="zoom-in">
                         <a href="https://pronabowy.github.io/Template_nine/" class="text-white" target="_blank">
-                            <img src="images/exitlag.webp" alt="img logo" loading="lazy" width="650px" height="206px"
+                            <div class="image-container">
+                                <img src="images/exitlag.webp" alt="img logo" loading="lazy" width="650px" height="206px"
                                 style="max-width: 100%;">
+                            </div>
                         </a>
                     </div>
                     <div class="item" data-aos="zoom-in">
                         <a href="https://pronabowy.github.io/Premier_League/" class="text-white" target="_blank">
-                            <img src="images/premier.webp" alt="img logo" loading="lazy" width="650px" height="206px"
+                            <div class="image-container">
+                                <img src="images/premier.webp" alt="img logo" loading="lazy" width="650px" height="206px"
                                 style="max-width: 100%;">
+                            </div>
                         </a>
                     </div>
                     <div class="item" data-aos="zoom-in">
                         <a href="https://pronabowy.github.io/Special-Design/" class="text-white" target="_blank">
-                            <img src="images/special.webp" alt="img logo" loading="lazy" width="650px" height="206px"
+                            <div class="image-container">
+                                <img src="images/special.webp" alt="img logo" loading="lazy" width="650px" height="206px"
                                 style="max-width: 100%;">
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -336,8 +390,10 @@
                             <div class="swiper-item position-relative" data-aos="zoom-out"
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://x-o.nabowy.online/" class="text-white" target="_blank">
-                                    <img src="images/x-o-game.webp" alt="img logo" loading="lazy" width="600px"
-                                        height="206px" style="max-width: 100%;">
+                                    <div class="image-container">
+                                        <img src="images/x-o-game.webp" alt="img logo" loading="lazy" width="600px"
+                                        height="100%" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -345,8 +401,10 @@
                             <div class="swiper-item position-relative" data-aos="zoom-in"
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/Youtube-APIs/" class="text-white" target="_blank">
-                                    <img src="images/youtube.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/youtube.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -355,8 +413,10 @@
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/Typing-Speed-Game/" class="text-white"
                                     target="_blank">
-                                    <img src="images/typing.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/typing.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -365,8 +425,10 @@
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/Schedule-LocalStorage-App/" class="text-white"
                                     target="_blank">
-                                    <img src="images/schedule.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/schedule.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -374,8 +436,10 @@
                             <div class="swiper-item position-relative" data-aos="fade-right"
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/Slider-Images/" class="text-white" target="_blank">
-                                    <img src="images/slider.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/slider.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -383,8 +447,10 @@
                             <div class="swiper-item position-relative" data-aos="fade-left"
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/LocalStorage/" class="text-white" target="_blank">
-                                    <img src="images/todos.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/todos.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -392,8 +458,10 @@
                             <div class="swiper-item position-relative" data-aos="flip-left"
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/Filteration/" class="text-white" target="_blank">
-                                    <img src="images/filteration.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/filteration.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -409,8 +477,10 @@
                             <div class="swiper-item position-relative" data-aos="flip-right"
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://remove-bg.nabowy.online/" class="text-white" target="_blank">
-                                    <img src="images/removebg.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/removebg.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -419,8 +489,10 @@
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/API-Random-image/" class="text-white"
                                     target="_blank">
-                                    <img src="images/random-img.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/random-img.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -428,8 +500,10 @@
                             <div class="swiper-item position-relative" data-aos="flip-down"
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/github_Api/" class="text-white" target="_blank">
-                                    <img src="images/github.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/github.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -445,8 +519,10 @@
                             <div class="swiper-item position-relative" data-aos="zoom-in-left"
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/CanvasOne/" class="text-white" target="_blank">
-                                    <img src="images/canvas-one.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/canvas-one.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -454,8 +530,10 @@
                             <div class="swiper-item position-relative" data-aos="zoom-in-up"
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/CanvasTwo/" class="text-white" target="_blank">
-                                    <img src="images/canvas-two.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/canvas-two.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -463,8 +541,10 @@
                             <div class="swiper-item position-relative" data-aos="zoom-in-down"
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/CanvasThree/" class="text-white" target="_blank">
-                                    <img src="images/canvas-three.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/canvas-three.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -472,8 +552,10 @@
                             <div class="swiper-item position-relative" data-aos="zoom-out"
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/CanvasFour/" class="text-white" target="_blank">
-                                    <img src="images/canvas-four.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/canvas-four.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -490,8 +572,10 @@
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/clipboard-landing-page-master/" class="text-white"
                                     target="_blank">
-                                    <img src="images/clipboard.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/clipboard.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -500,8 +584,10 @@
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/alternating-feature-blocks-master/"
                                     class="text-white" target="_blank">
-                                    <img src="images/huddle.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/huddle.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -510,8 +596,10 @@
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/Testimonials-grid-section-main/" class="text-white"
                                     target="_blank">
-                                    <img src="images/grid-system.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/grid-system.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -519,8 +607,10 @@
                             <div class="swiper-item position-relative" data-aos="fade-left"
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/Circles/" class="text-white" target="_blank">
-                                    <img src="images/circles.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/circles.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -528,8 +618,10 @@
                             <div class="swiper-item position-relative" data-aos="fade-up"
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/Aplle/" class="text-white" target="_blank">
-                                    <img src="images/apple-logo.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/apple-logo.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -537,8 +629,10 @@
                             <div class="swiper-item position-relative" data-aos="fade-down"
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/Cards/" class="text-white" target="_blank">
-                                    <img src="images/cards.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/cards.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -547,8 +641,10 @@
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/toggle_CheckBox/" class="text-white"
                                     target="_blank">
-                                    <img src="images/check-box.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/check-box.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -561,20 +657,24 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper ">
                         <div class="swiper-slide">
-                            <div class="swiper-item position-relative" data-aos="flip-left"
+                            <div class="swiper-item position-relative"
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/Compute-Darw/" class="text-white" target="_blank">
-                                    <img src="images/computer.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/computer.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="swiper-item position-relative" data-aos="zoom-out"
+                            <div class="swiper-item position-relative"
                                 style="background-color: var(--main-color); padding: 10px;">
                                 <a href="https://pronabowy.github.io/shape-Darw/" class="text-white" target="_blank">
-                                    <img src="images/darw-shape.webp" alt="img logo" loading="lazy" width="600px"
+                                    <div class="image-container">
+                                        <img src="images/darw-shape.webp" alt="img logo" loading="lazy" width="600px"
                                         height="206px" style="max-width: 100%;">
+                                    </div>
                                 </a>
                             </div>
                         </div>
