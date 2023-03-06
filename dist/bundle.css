@@ -10,7 +10,6 @@
   --main-color: #2c2d35;
   --main-transition: 0.5s;
   --effect: hover 1s linear infinite;
-  --turquoise-flash-color: #00ffad;
   --white-color: white;
   --black-color: black;
   --midnight-black: #121212;
@@ -144,7 +143,7 @@ header ul.small-media {
 }
 
 .about p::selection,.about h1::selection,.about h3::selection,.about h4::selection,.about h6::selection,.about span::selection {
-  background-color: var(--turquoise-flash-color) !important;
+  background-color: var(--white-color) !important;
   color: #777;
 }
 
