@@ -7,7 +7,7 @@ caches.open('critical-resources')
 const link = document.createElement('link');
 link.rel = 'stylesheet';
 link.href = '/dist/bundle.css';
-document.head.appendChild(link);
+document.head.prepend(link);
 const script = document.createElement('script');
 script.src = '/dist/bundle.js';
 document.body.appendChild(script);
